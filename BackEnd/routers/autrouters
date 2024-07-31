@@ -1,0 +1,8 @@
+const express = require('express');
+const router = express.Router();
+const controlAutenticar = require(`../controles/controlAutenticar`)
+
+router.post('/register', controlAutenticar.register);
+router.post('/login', controlAutenticar.login);
+
+module.exports = router;
